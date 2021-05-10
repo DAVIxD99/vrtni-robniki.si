@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+  <title>Visoke grede iz pločevine</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <link rel="stylesheet" href="/styles/grede.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/56a43ba100.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <ul id="nav-bar">
+    <a href="/scripts/main.html"
+      ><button class="nav-button"><i class="fas fa-home"></i></button
+    ></a>
+
+    <a href="/scripts/robniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="grede">Vrtni kovinski robniki</li>
+      </button></a
+    >
+    <a href="/scripts/grede.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="grede">Vrtne visoke grede iz pločevine</li>
+      </button></a
+    >
+    <a href="/scripts/smetarniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="smetarniki">Smetarniki</li>
+      </button></a
+    >
+    <a href="/scripts/smetarniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="ograja-polzi">Ograje za polže</li>
+      </button></a
+    >
+    <a href="/scripts/korita.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="korita">Korita za rože</li>
+      </button></a
+    >
+  </ul>
+
+  <div class="grede">
+    <div id=grede-head-div>
+    <h3 id="grede-header">Visoke grede iz pločevine</h3>
+    <p id="grede-about">Kakovostne grede za vsako okolico</p>
+  </div>
+    <div class="grede-head-images">
+      <img src="/images/IMG_3514.jpg" class="image" id="imgG-1" />
+      <img src="/images/IMG_3517.jpg" class="image" id="imgG-2" />
+      <img src="/images/IMG_3515.jpg" class="image" id="imgG-3" />
+    </div>
+  </div>
+
+  <div id="uporaba-grede">
+    <p id="about-grede">
+      Vrtne visoke grede so edinstvena in moderna rešitev za vse, ki jim primankuje prostor za vrt, saj jih lahko postavimo kjerkoli.
+    </p>
+
+    <div id="uporaba-grede-main">
+      <!--
+      <div id="prednosti">
+        <h4 class="uporaba-grede-header">Prednosti:</h4>
+        <ul id="prednosti-ul">
+          <li class="prednosti-li">preprosta in hitra namestitev</li>
+          <li class="prednosti-li">
+            omogočajo oblikovanje grede po vaši želji
+          </li>
+          <li class="prednosti-li">ravni ali pa ukrivljeni v željeno obliko</li>
+          <li class="prednosti-li">
+            preprečujejo zaraščanje trave v gredo in spreminjanje njene oblike
+          </li>
+          <li class="prednosti-li">
+            uporabni tudi kot ograja za zadrževanje lubja ali okrasnega kamenja
+          </li>
+          <li class="prednosti-li">trpežen in nerjaveč material</li>
+          <li class="prednosti-li">
+            preprosto podaljševanje in odstranjevanje
+          </li>
+        </ul>
+      </div>
+
+      <div id="dimenzije">
+        <h4 id="dimenzije-header" class="uporaba-grede-header">Dimenzije:</h4>
+        <ul id="dimenzije-ul">
+          <li class="dimenzije-li">Dolžina: 1500-2000mm</li>
+          <li class="dimenzije-li">Višina: 95mm</li>
+          <li class="dimenzije-li">Debelina: 0.7mm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+      -->
+  <section id="grede-main">
+    <h3 id="naslov-grede">Vrste gred</h3>
+
+    <div id="opisi">
+      <div id="grede-1" class="grede-div">
+        <div class="describtion">
+          <h4 id="head-grede-1" class="head-grede">
+            
+          </h4>
+          <p class="cena-grede">3 €/m</p>
+        </div>
+        <img src="" class="image grede-img" />
+      </div>
+
+      <div id="grede-2" class="grede-div">
+        <div class="describtion">
+          <h4 id="head-grede-2" class="head-grede"></h4>
+          <p class="cena-grede">3,5 €/m</p>
+        </div>
+        <img src="" class="image grede-img" />
+      </div>
+
+      <div id="grede-3" class="grede-div">
+        <div class="describtion">
+          <h4 id="head-grede-3" class="head-grede"></h4>
+          <p class="cena-grede">4 €/m</p>
+        </div>
+        <img src="" class="image grede-img" />
+      </div>
+    </div>
+
+    <a href="/scripts/main.html#contact"
+      ><button id="order">POŠLJI POVPRAŠEVANJE</button></a
+    >
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("nav-bar").style.top = "0";
+        } else {
+          document.getElementById("nav-bar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </section>
+</body>

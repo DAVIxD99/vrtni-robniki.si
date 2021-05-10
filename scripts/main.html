@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+  <title>vrtni-robniki.si</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <link rel="stylesheet" href="/styles/main-page.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/56a43ba100.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <ul id="nav-bar">
+    <a href="/scripts/main.html"
+      ><button class="nav-button">
+        <i class="fas fa-home" id="home-btn"></i></button
+    ></a>
+
+    <a href="/scripts/robniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="robniki">Vrtni kovinski robniki</li>
+      </button></a
+    >
+    <a href="/scripts/grede.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="grede">Vrtne visoke grede iz pločevine</li>
+      </button></a
+    >
+    <a href="/scripts/smetarniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="smetarniki">Smetarniki</li>
+      </button></a
+    >
+    <a href="/scripts/smetarniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="ograja-polzi">Ograje za polže</li>
+      </button></a
+    >
+    <a href="/scripts/korita.html"
+      ><button class="nav-button" id="korita-button">
+        <li class="nav-bar-el" id="korita">Korita za rože</li>
+      </button></a
+    >
+  </ul>
+  <section id="welcome">
+    <h1>vrtni-robniki.si</h1>
+    <p id="page-describtion">IZDELKI IZ PLOČEVINE ZA VSE VAŠE POTREBE</p>
+  </section>
+
+  <div id="podrocja">
+    <div id="storitve" class="main"><h2>O NAS</h2>
+    <p class="main-para" id="about">Naša mlada ekipa izdeluje le iz najbolj kakovostnih materialov, primernih za vse vrste vrtov.</p>
+    </div>
+    <div id="updates" class="main">
+      <h2>NOVO PRI NAS</h2>
+      <p class="main-para" id="new">Trenutno ni novosti.</p>
+      </div>
+
+    <div id="contact" class="main">
+      <h2>KONTAKT</h2>
+      <div class="buttons">
+        <a
+          class="contact-btn"
+          target="blank"
+          href="https://www.facebook.com/jani.bambic"
+        >
+          <i
+            class="fab fa-facebook"
+            style="vertical-align: middle; margin-right: 10px"
+          ></i>
+          Facebook
+        </a>
+
+        <a
+          class="contact-btn"
+          target="blank"
+          href="mailto:jani.bambic@gmail.com"
+        >
+          <i
+            class="far fa-envelope"
+            style="vertical-align: middle; margin-right: 10px"
+          ></i>
+          jani.bambic@gmail.com
+        </a>
+
+        <a class="contact-btn" target="blank" href="tel:+38641-571-155">
+          <i
+            class="fas fa-mobile-alt"
+            style="vertical-align: middle; margin-right: 10px"
+          ></i>
+          041 - 571 - 155
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav-bar").style.top = "0";
+      } else {
+        document.getElementById("nav-bar").style.top = "-70px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>

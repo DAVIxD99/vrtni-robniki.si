@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+  <title>Vrtni kovinski robniki</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <link rel="stylesheet" href="/styles/robniki.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/56a43ba100.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+<body>
+  <ul id="nav-bar">
+    <a href="/scripts/main.html"
+      ><button class="nav-button"><i class="fas fa-home"></i></button
+    ></a>
+
+    <a href="/scripts/robniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="robniki">Vrtni kovinski robniki</li>
+      </button></a
+    >
+    <a href="/scripts/grede.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="grede">Vrtne visoke grede iz pločevine</li>
+      </button></a
+    >
+    <a href="/scripts/smetarniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="smetarniki">Smetarniki</li>
+      </button></a
+    >
+    <a href="/scripts/smetarniki.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="ograja-polzi">Ograje za polže</li>
+      </button></a
+    >
+    <a href="/scripts/korita.html"
+      ><button class="nav-button">
+        <li class="nav-bar-el" id="korita">Korita za rože</li>
+      </button></a
+    >
+  </ul>
+
+  <div class="robniki">
+    <div id="robniki-head-div">
+    <h3 id="robniki-header">Vrtni kovinski robniki</h3>
+    <p id="robniki-about">Odlična rešitev za obrobo vseh vrtov</p>
+    </div>
+    <div class="robniki-head-images">
+      <img src="/images/IMG_1560.jpg" class="image" id="imgR-1" />
+      <img src="/images/IMG_1561.jpg" class="image" id="imgR-2" />
+      <img src="/images/IMG_1949.jpg" class="image" id="imgR-3" />
+    </div>
+  </div>
+
+  <div id="uporaba-robniki">
+    <p id="about-robniki">
+      Kovinski robniki so ena izmed najbolj elegantnih in učinkovitih rešitev za
+      oblikovanje vaše okolice. Z njihovo uporabo boste na zelo hiter in
+      preprost način pričarali urejen videz vašega vrta.
+    </p>
+
+    <div id="uporaba-robniki-main">
+
+      <div id="prednosti">
+        <h4 class="uporaba-robniki-header">Prednosti:</h4>
+        <ul id="prednosti-ul">
+          <li class="prednosti-li">preprosta in hitra namestitev</li>
+          <li class="prednosti-li">
+            omogočajo oblikovanje grede po vaši želji
+          </li>
+          <li class="prednosti-li">ravni ali pa ukrivljeni v željeno obliko</li>
+          <li class="prednosti-li">
+            preprečujejo zaraščanje trave v gredo in spreminjanje njene oblike
+          </li>
+          <li class="prednosti-li">
+            uporabni tudi kot ograja za zadrževanje lubja ali okrasnega kamenja
+          </li>
+          <li class="prednosti-li">trpežen in nerjaveč material</li>
+          <li class="prednosti-li">
+            preprosto podaljševanje in odstranjevanje
+          </li>
+        </ul>
+      </div>
+
+      <div id="dimenzije">
+        <h4 id="dimenzije-header" class="uporaba-robniki-header">Dimenzije:</h4>
+        <ul id="dimenzije-ul">
+          <li class="dimenzije-li">Dolžina: 1500-2000mm</li>
+          <li class="dimenzije-li">Višina: 95mm</li>
+          <li class="dimenzije-li">Debelina: 0.7mm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="robniki-main">
+    <h3 id="naslov-robniki">Vrste robnikov</h3>
+
+    <div id="opisi">
+      <div id="robnik-1" class="robnik-div">
+        <div class="describtion">
+          <h4 id="head-robnik-1" class="head-robnik">
+            Osnovni kovinski robniki
+          </h4>
+          <p class="cena-robnik">3 €/m</p>
+        </div>
+        <img src="/images/IMG_3603.JPG" class="image robnik-img" />
+      </div>
+
+      <div id="robnik-2" class="robnik-div">
+        <div class="describtion">
+          <h4 id="head-robnik-2" class="head-robnik">L robniki</h4>
+          <p class="cena-robnik">3,5 €/m</p>
+        </div>
+        <img src="/images/IMG_3604.JPG" class="image robnik-img" />
+      </div>
+
+      <div id="robnik-3" class="robnik-div">
+        <div class="describtion">
+          <h4 id="head-robnik-3" class="head-robnik">Zarobljeni robniki</h4>
+          <p class="cena-robnik">4 €/m</p>
+        </div>
+        <img src="/images/IMG_3605.JPG" class="image robnik-img" />
+      </div>
+    </div>
+
+    <a href="/scripts/main.html#contact"
+      ><button id="order">POŠLJI POVPRAŠEVANJE</button></a
+    >
+
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("nav-bar").style.top = "0";
+        } else {
+          document.getElementById("nav-bar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+  </section>
+</body>

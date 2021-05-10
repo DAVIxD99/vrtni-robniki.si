@@ -1,0 +1,210 @@
+/*OSNOVNO*/
+
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#nav-bar {
+  list-style: none;
+  position: fixed;
+  display: flex;
+  background-color: rgb(184, 0, 0);
+  color: white;
+  width: 100vw;
+  justify-content: center;
+  height: 70px;
+  transition: top 0.3s;
+}
+
+.nav-bar-el {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-button {
+  background: inherit;
+  border: none;
+  transition: background 0.3s ease-out;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-button:hover {
+  background: rgb(69, 86, 125);
+}
+
+/*STRAN Z ROBNIKI*/
+
+#uporaba-robniki {
+  height: 100vh;
+}
+
+#about-robniki {
+  font-size: 1.25em;
+  font-style: italic;
+  margin: 0 0 100px 20px;
+}
+
+.uporaba-robniki-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#prednosti {
+  display: block;
+  max-width: 400px;
+}
+
+#dimenzije {
+  display: block;
+}
+
+#prednosti-ul {
+  margin-bottom: 40px;
+}
+
+.prednosti-li {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.cena-robnik {
+  width: max-content;
+  margin: auto;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.dimenzije-li {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+#uporaba-robniki-main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 200px;
+}
+
+#robniki-header {
+  font-size: 3em;
+  color: white;
+  margin: auto;
+}
+
+#robniki-about {
+  margin: 20px auto 150px auto;
+  color: white;
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+.head-robnik {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#robniki-head-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.robniki {
+  background-image: linear-gradient(180deg, rgb(11, 77, 11) 0%, white 100%);
+  height: 100vh;
+  padding-top: 100px;
+}
+
+#robniki-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(62deg, rgb(69, 86, 125) 0%, #181719 100%);
+  color: white;
+}
+
+.image {
+  height: 350px;
+  margin: 0 10px;
+}
+
+#imgR-1 {
+  width: 275px;
+}
+#imgR-3 {
+  width: 275px;
+}
+
+#naslov-robniki {
+  margin-top: 70px;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+#opisi {
+  display: flex;
+}
+
+#nav-robniki-1 {
+  margin: 20px 0 0 15px;
+  list-style: symbols(-);
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.nav {
+  padding: 5px 0;
+  font-style: italic;
+  list-style: none;
+}
+
+.robnik-img {
+  margin: 0;
+  width: 350px;
+  border-bottom: none;
+}
+
+.robnik-div {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+
+  max-width: 350px;
+}
+
+#order {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-top: 50px;
+  transition: background 0.3s ease-out;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#order:hover {
+  background: #3a3d40;
+}
